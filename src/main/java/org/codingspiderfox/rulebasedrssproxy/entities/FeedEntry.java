@@ -1,5 +1,6 @@
 package org.codingspiderfox.rulebasedrssproxy.entities;
 
+import java.nio.charset.Charset;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -30,4 +31,10 @@ public class FeedEntry {
     @JoinColumn(name = "feedId")
     private Feed feed;
 
+
+    private String subject;
+
+    public String getSubject() {
+        return subject;
+    }
 }
